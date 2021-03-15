@@ -11,9 +11,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09e9b8eb-4885-4839-9b6b-297e54e8ee22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/services/loggerService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/mqService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/applyMiddleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/errorHandlingService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/mqService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/mqService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615796359765</updated>
-      <workItem from="1615796361073" duration="3142000" />
+      <workItem from="1615796361073" duration="5742000" />
     </task>
     <task id="LOCAL-00001" summary="Revert &quot;Big Bang&quot;&#10;&#10;This reverts commit caf96ea3">
       <created>1615796675958</created>

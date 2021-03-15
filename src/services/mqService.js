@@ -17,7 +17,7 @@ export const amqpConnect = async () => {
     logger.info(`AMQP - connection established at ${MQ_URL}`);
   } catch (ex) {
     logger.log('fatal', `AMQP - ${ex}`);
-    process.exit(1);
+    process.exit();
   }
 };
 
