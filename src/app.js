@@ -1,5 +1,4 @@
 import express from 'express';
-import bodyParser from 'body-parser';
 import { amqpConnect, injectExchangeService } from './services/mqService';
 import { errorHandlingService } from './services/errorHandlingService';
 import { logger } from './services/loggerService';
