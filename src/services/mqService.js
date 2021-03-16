@@ -2,19 +2,19 @@ import amqp from 'amqplib';
 import { logger } from './loggerService';
 
 const { MQ_HOST = 'localhost' } = process.env;
-const MQ_URL = `amqp://${MQ_HOST}:5672`;
+const { CLOUDAMQP_URL = `amqp://${MQ_HOST}:5672` } = process.env;
 const EXCHANGE = 'emergency_electric';
 let eeChannel = null;
 
 export const amqpConnect = async () => {
   try {
-    const mqConnection = await amqp.connect(MQ_URL);
+    const mqConnection = await amqp.connect(CLOUDAMQP_URL);
     eeChannel = await mqConnection.createChannel();
 
     await eeChannel.assertExchange(EXCHANGE, 'fanout', {
       durable: false,
     });
-    logger.info(`AMQP - connection established at ${MQ_URL}`);
+    logger.info(`AMQP - connection established at ${CLOUDAMQP_URL}`);
   } catch (ex) {
     logger.log('fatal', `AMQP - ${ex}`);
     process.exit();
